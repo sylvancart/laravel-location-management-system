@@ -44,7 +44,7 @@
                                             <form action="{{ route('pincodes.destroy', $pincode->id) }}" method="POST" style="display: inline-block;">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this pincode?')">Delete</button>
+                                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this pincode?')"><i class="bx bx-trash"></i> Delete</button>
                                             </form>
                                             <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#viewPincodeModal" onclick="viewPincode({{ $pincode }})">View</button>
                                         </td>                                        
